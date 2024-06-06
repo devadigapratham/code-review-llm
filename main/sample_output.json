@@ -1,0 +1,24 @@
+[
+    {
+        "repository": "user1/repo1",
+        "pull_requests": [
+            {
+                "pull_number": 1,
+                "comment": "This is a comment for PR #1"
+            },
+            {
+                "pull_number": 2,
+                "comment": "Another comment for PR #2"
+            }
+        ]
+    },
+    {
+        "repository": "user2/repo2",
+        "pull_requests": [
+            {
+                "pull_number": 3,
+                "comment": "Comment for PR #3"
+            }
+        ]
+    }
+]

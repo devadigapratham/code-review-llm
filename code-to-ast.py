@@ -1,12 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
-
-
-# In[10]:
 
 
 from tree_sitter import Language, Parser
@@ -14,31 +5,14 @@ from tree_sitter import Language, Parser
 
 
 
-
-
-# In[12]:
-
-
-# In[13]:
-
-
 import tree_sitter_go as tsgo
-
-
-# In[14]:
 
 
 GO_LANGUAGE = Language(tsgo.language())
 
 
-# In[16]:
-
-
 parser = Parser(GO_LANGUAGE)
 parser.language = GO_LANGUAGE 
-
-
-# In[17]:
 
 
 go_code = b"""
@@ -228,9 +202,6 @@ func NewProduct(name string, qty, price uint) (Product, error) {
 	}, nil
 }
 """
-
-
-# In[18]:
 
 
 tree = parser.parse(go_code)
